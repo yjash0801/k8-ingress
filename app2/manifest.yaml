@@ -48,6 +48,7 @@ metadata:
     alb.ingress.kubernetes.io/tags: Environment=dev,Team=test,Project=Mechanoidstore
     alb.ingress.kubernetes.io/group.name: mechanoidstore
 spec:
+  ingressClassName: alb
   rules:
   - host: "app2.mechanoidstore.online"
     http:
